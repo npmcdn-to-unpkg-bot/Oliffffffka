@@ -1,0 +1,25 @@
+<section *ngIf="cats">
+    <div class="container" style="margin-top: 5em;">
+        <div class="post">
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-5">
+                    <h2 class="post-title cat-title">Kategorie</h2>
+                    <ul class="cat-list">
+                        <li><a *ngFor="let cat of cats" [routerLink]="['/category', cat.id]">{{ cat.name }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section *ngIf="error">
+    <div class="container" style="margin-top: 5em;">
+        <div class="post">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <h2 class="post-title cat-title" style="text-align: center;">Niestety, na chwilę obecną nie udało się wczytać kategorii!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

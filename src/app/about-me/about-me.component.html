@@ -1,0 +1,41 @@
+<section *ngIf="info">
+    <div class="container" style="margin-top: 5em;">
+        <div class="post">
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <h2 class="post-title">{{ info.title }}</h2>
+                    <p  class="post-content">{{ info.content }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <div class="profile-image-container">
+                        <img class="profile-image" [src]="sanitizeImage()">
+                    </div>
+                    <div class="contact-info">
+                        <h2 class="post-title" id="contact-title">{{ info.name }}</h2>
+                        <ul class="contact-info-list">
+                            <li>{{ info.number }}</li>
+                            <li>{{ info.mail }}</li>
+                            <li>snapchat: {{ info.snapchat }}</li>
+                            <li>instagram: {{ info.instagram }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section *ngIf="error">
+    <div class="container" style="margin-top: 5em;">
+        <div class="post">
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <h2 class="post-title cat-title" style="text-align: center;">Niestety, na chwilę obecną strona "O mnie" nie istnieje!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

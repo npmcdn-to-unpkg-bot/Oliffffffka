@@ -1,0 +1,21 @@
+<section>
+    <div class="container" style="margin-top: 5em;">
+      <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align: center; font-family: 'Prompt', sans-serif; font-weight: 200; margin-bottom: 2em;">SELECT THE PAGE</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 flex-container">
+          <a class="btn btn-default flex-item" [routerLink]="['posts']">Posts</a>
+          <a class="btn btn-default flex-item" [routerLink]="['about']">About Me</a>
+          <a class="btn btn-default flex-item" [routerLink]="['categories']">Categories</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 flex-container" style="margin-top: 16em;">
+          <a class="btn btn-default flex-item" (click)="logout()">Log out</a>
+        </div>
+      </div>
+    </div>
+</section>

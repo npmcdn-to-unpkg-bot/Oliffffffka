@@ -1,0 +1,23 @@
+<section>
+    <div class="container" style="margin-top: 5em;">
+      <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align: center; font-family: 'Prompt', sans-serif; font-weight: 200; margin-bottom: 2em;">ABOUT-ME</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <form *ngIf="loaded" [formGroup]="catForm" autocomplete="off" (submit)="add(catForm.value)">
+            <div class="field">
+              <label for="cat-name" class="flex-label">Name</label>
+              <input type="text" id="cat-name" class="flex-input" name="name" [formControl]="name" placeholder="Name of category..." required>
+            </div>
+            <div class="flex-container">
+              <a class="btn btn-default flex-item" [routerLink]="['../']">Back</a>
+              <button type="submit" class="btn btn-success flex-item add-btn">+ Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>

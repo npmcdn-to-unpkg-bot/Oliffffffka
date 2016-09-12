@@ -1,0 +1,15 @@
+RewriteEngine 	On
+RewriteRule 	^posts/?$    			       index.php    			        [NC,L]    # Handle all posts request
+RewriteRule 	^post/([0-9]+)/?$    	       index.php?post=$1    		    [NC,L]    # Handle specific post request
+RewriteRule 	^category/([0-9]+)/?$          index.php?cat=$1    		        [NC,L]    # Handle specific category request
+RewriteRule	    ^about/?$			           about.php			            [NC,L]	  # Handle about-me requests
+RewriteRule 	^categories/?$    		       cat.php    			            [NC,L]    # Handle all categories request
+RewriteRule     ^categories/([0-9]+)/?$        cat.php?id=$1                    [NC,L]    # Handle single cat request
+RewriteRule 	^post/new/?$    		       create.php?type=post    	        [NC,L]    # Handle post upload request
+RewriteRule 	^post/new/([0-9]+)/?$    	   create.php?type=post&id=$1    	[NC,L]    # Handle post edit request
+RewriteRule 	^category/new/?$    		   create.php?type=category    	    [NC,L]    # Handle category upload request
+RewriteRule 	^category/edit/([0-9]+)/?$     create.php?type=category&id=$1	[NC,L]    # Handle category edit request
+RewriteRule     ^about/new/?$                  create.php?type=about            [NC,L]    # Handle about-me page update
+RewriteRule 	^login/?$                      login.php                       	[NC,L]    # Handle login request
+RewriteRule     ^check/?$                      check.php                        [NC,L]    # Handle login check request
+RewriteRule     ^category/delete/([0-9]+)/?$   delete.php?id=$1                 [NC,L]    # Handle category removal

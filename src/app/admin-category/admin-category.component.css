@@ -1,0 +1,18 @@
+.flex-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    align-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.flex-item {
+    margin-top: 30px;
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+}
+button, a {
+    border-radius: 0px;
+}

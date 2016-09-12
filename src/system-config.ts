@@ -8,11 +8,14 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
+var cropperVer = '0.6.4';
 const map: any = {
+  'ng2-img-cropper':            'https://npmcdn.com/ng2-img-cropper@'+cropperVer,
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'ng2-img-cropper' :           { main: 'index.js', defaultExtension: 'js' }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,10 +35,25 @@ const barrels: string[] = [
 
   // Thirdparty barrels.
   'rxjs',
+  'ng2-img-cropper',
 
   // App specific barrels.
   'app',
   'app/shared',
+  'app/post',
+  'app/category',
+  'app/view',
+  'app/about-me',
+  'app/login',
+  'app/admin',
+  'app/not-found',
+  'app/admin-posts',
+  'app/admin-about',
+  'app/admin-category',
+  'app/admin-post-add',
+  'app/admin-post-edit',
+  'app/admin-category-add',
+  'app/admin-category-edit',
   /** @cli-barrel */
 ];
 
