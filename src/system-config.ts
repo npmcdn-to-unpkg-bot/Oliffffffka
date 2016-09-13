@@ -10,7 +10,7 @@
 /** Map relative paths to URLs. */
 var cropperVer = '0.6.4';
 const map: any = {
-  'ng2-img-cropper':            'https://npmcdn.com/ng2-img-cropper@'+cropperVer,
+  'ng2-img-cropper':            'https://unpkg.com/ng2-img-cropper@'+cropperVer,
 };
 
 /** User packages configuration. */
